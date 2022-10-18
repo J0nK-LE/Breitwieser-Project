@@ -31,46 +31,67 @@
     <h3>Amount sold:</h3>
   </div> }}
   {{! button to go to posting art page }}
+</div>
 
+<br />
+<br />
+<br />
 
-<br>
-<br>
-<br>
-
-  <div class="has-text-success-dark container">
-    <h3 class="title mb-6 has-text-centered">Post your new "acquired" art for sale:</h3>
+<div class='container column has-text-centered'>
+  <div class='has-text-success-dark'>
+    <h3 class='title mb-6 has-text-centered'>Post your new "acquired" art for
+      sale:</h3>
   </div>
-    <form class="card has-text-centered" id="submit-art">
-      <div>
-        <label for="product-name">Name of the painting  :</label>
-        <input class="form-input" type="text" id="product-name" name="product-name" />
+  <div class='card has-text-centered'>
+    <form id='submit-art'>
+      <div class='container has-text-centered'>
+        <label for='product-name'>Name of the painting :</label>
+        <input
+          class='form-input'
+          type='text'
+          id='product-name'
+          name='product-name'
+        />
       </div>
       <div>
-        <label for="product-price">Price  :</label>
-        <input class="form-input" type="number" id="product-price" name="product-price" />
+        <label for='product-price'>Price :</label>
+        <input
+          class='form-input'
+          type='number'
+          id='product-price'
+          name='product-price'
+        />
       </div>
       <div>
-        <label for="product-desc">description  :</label>
-        <textarea class="form-input" id="product-desc" name="product-desc"></textarea>
+        <label for='product-desc'>description :</label>
+        <textarea
+          class='form-input'
+          id='product-desc'
+          name='product-desc'
+        ></textarea>
       </div>
       <div>
-        <label for="artist_name">Name of the Artist  :</label>
-     <select name="" id="artistDropdown">
-      {{#each artists as |artist|}}
-      <option value="{{artist.id}}">
-        {{artist.artist_name}}
-      </option>
-      {{/each}}
-      </select>
+        <label for='artist_name'>Name of the Artist :</label>
+        <select name='' id='artistDropdown'>
+          {{#each artists as |artist|}}
+            <option value='{{artist.id}}'>
+              {{artist.artist_name}}
+            </option>
+          {{/each}}
+        </select>
       </div>
-      <div value="{{id}}" id="user-id"></div>
+      <div value='{{id}}' id='user-id'></div>
       <div>
-        <label for="image-link">link to a picture of the artwork  :</label>
-        <textarea class="form-input" id="image-link" name="image-link"></textarea>
+        <label for='image-link'>link to a picture of the artwork :</label>
+        <textarea
+          class='form-input'
+          id='image-link'
+          name='image-link'
+        ></textarea>
       </div>
-    <div>
-      <button class='button is-link mt-5' type='submit'>Add "new" art for sale</button>
-    </div>
+      <div>
+        <button class='button is-link mt-5' type='submit'>Add "new" art for sale</button>
+      </div>
     </form>
   </div>
 </div>
